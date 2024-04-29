@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=15&tags=vegetarian`
+        `https://api.spoonacular.com/recipes/findByDiet?diet=vegetarian&apiKey=${apiKey}&number=15`
       )
       .then((response) => {
         setRecipes(response.data.recipes);
