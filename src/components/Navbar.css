@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #CCDBDC;
+    height: 30px;
+}
+
+.navbar--logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.logo--image {
+    max-width: 45px;
+    padding: 6px 0 6px 15px;
+}
+
+.logo--title {
+    font-size: 18px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
+    padding: 0;
+}
+
+.logo--title--green {
+    color: #0B5D1E;
+}
+
+.logo--title--gourmet {
+    color: #2B0504;
+}
+
+.navbar--menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.navbar--menu--item {
+    color: #0B5D1E;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.navbar--menu--item:hover {
+    color: #D17A22;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
