@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [ingredient, setIngredient] = useState("");
