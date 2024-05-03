@@ -5,7 +5,7 @@ const RecipeCard = ({ recipe }) => {
   return (
     <div className='recipe--card'>
       <h4 className='recipe--title'>{recipe.title}</h4>
-      <a href={recipe.sourceUrl} target='blank'>
+      <a href={recipe.sourceUrl} target='blank' rel='noopener noreferrer'>
         <img className='recipe--image' src={recipe.image} alt={recipe.title} />
       </a>
     </div>
