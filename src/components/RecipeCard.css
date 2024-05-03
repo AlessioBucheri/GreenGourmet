@@ -1,3 +1,13 @@
+.recipe--list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
 .recipe--card {
     display: flex;
     flex-direction: column;
@@ -5,15 +15,16 @@
     align-items: center;
     max-width: 200px;
     max-height: 200px;
-    border: #2B0504 3px solid;
+    padding: 10px;
     border-radius: 10px;
+    background-color: #ccdbdc31;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
 }
 
 .recipe--image {
-    width: 100px;
-    height: 100px;
+    max-width: 200px;
     margin-bottom: 10px;
-    object-fit: cover;
+    border-radius: 5px;
 }
 
 .recipe--title {
