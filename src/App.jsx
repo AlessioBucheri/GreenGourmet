@@ -15,17 +15,19 @@ function App() {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        "https://api.spoonacular.com/recipes/findByIngredients",
+        `https://api.spoonacular.com/recipes/complexSearch`,
         {
           params: {
-            ingredients: ingredient,
-            apiKey: "d0ffe0a048194bd6b8f5e5f2242c4e6c", // Replace with your Spoonacular API key
-            vegetarian: true,
+            query: ingredient,
+            addRecipeInformation: true,
+            diet: "vegetarian",
+            number: 5,
+            apiKey: "d0ffe0a048194bd6b8f5e5f2242c4e6c",
           },
         }
       );
-      console.log(response.data);
-      setRecipes(response.data);
+      console.log(response.data.results);
+      setRecipes(response.data.results);
     } catch (error) {
       console.error("Error fetching recipes:", error);
     }
