@@ -1,11 +1,10 @@
 .recipe--list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     padding: 20px;
-    margin: 20px 0;
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
 
 .recipe--card {
@@ -13,25 +12,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 200px;
-    max-height: 200px;
     padding: 10px;
-    border-radius: 10px;
-    background-color: #ccdbdc31;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
-}
-
-.recipe--image {
-    max-width: 200px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    width: 200px;
+    height: 200px;
 }
 
 .recipe--title {
-    font-size: 15px;
+    font-size: 16px;
     color: #2B0504;
     text-align: center;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
-    line-height: 0.9;
-    margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: auto;
+    background-color: #ffffff9a;
+}
+
+.recipe--link {
+    text-decoration: none;
+}
+
+.recipe--title:hover {
+    background-color: #000000b2;
+    color: #D17A22;
 }
