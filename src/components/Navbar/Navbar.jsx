@@ -21,9 +21,11 @@ export default function Navbar() {
           <Link to='/'>Home</Link>
         </li>
         <li className='navbar--menu--item'>
+          {" "}
           <Link to='/about'>About</Link>
         </li>
         <li className='navbar--menu--item'>
+          {" "}
           <Link to='/contact'>Contact</Link>
         </li>
       </ul>

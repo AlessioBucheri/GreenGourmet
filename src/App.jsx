@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 import RecipeCard from "./components/RecipeCard/RecipeCard";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import PageLayout from "./components/PageLayout";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
-import { BrowserRouter as Router } from "react-router-dom";
 
 const API_KEY = "d0ffe0a048194bd6b8f5e5f2242c4e6c";
 
@@ -57,20 +61,31 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Main />
-      <SearchBar
-        ingredient={ingredient}
-        setIngredient={setIngredient}
-        handleSearch={handleSearch}
-      />
-      <div className='recipe--list'>
-        {recipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
-        ))}
-      </div>
-      {hasLoaded && recipes.length > 0 && (
-        <LoadMoreButton onLoadMore={handleLoadMore} />
-      )}
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <PageLayout>
+              <Main />
+              <SearchBar
+                ingredient={ingredient}
+                setIngredient={setIngredient}
+                handleSearch={handleSearch}
+              />
+              <div className='recipe--list'>
+                {recipes.map((recipe) => (
+                  <RecipeCard key={recipe.id} recipe={recipe} />
+                ))}
+              </div>
+              {hasLoaded && recipes.length > 0 && (
+                <LoadMoreButton onLoadMore={handleLoadMore} />
+              )}
+            </PageLayout>
+          }
+        />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
       <Footer />
     </Router>
   );

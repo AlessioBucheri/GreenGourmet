@@ -72,4 +72,9 @@ body {
     .footer {
         max-width: 100%;
     }
+
+    .about--wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100%;
+    }
 }

@@ -1,0 +1,34 @@
+.contact--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(220, 204, 204, 0.142);
+    margin-top: 150px;
+    color: #2B0504;
+    padding: 10px;
+}
+
+.contact--list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contact--list img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact--list li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact--list li a {
+    text-decoration: none;
+    color: #2B0504;
+}
