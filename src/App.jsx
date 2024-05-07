@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import RecipeCard from "./components/RecipeCard/RecipeCard";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Navbar from "./components/Navbar/Navbar";
-import Main from "./components/Main/Main";
+import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -66,7 +66,7 @@ function App() {
           path='/'
           element={
             <PageLayout>
-              <Main />
+              <MainContent />
               <SearchBar
                 ingredient={ingredient}
                 setIngredient={setIngredient}
