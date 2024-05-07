@@ -14,7 +14,7 @@ export default function Main() {
         </div>
         <img
           className='main--image'
-          src='./src/images/veggy-ingredients.jpg'
+          src='./images/veggy-ingredients.jpg'
           alt='Vegetarian Food Image'
         />
       </div>

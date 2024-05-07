@@ -10,7 +10,7 @@ function Contact() {
           {" "}
           <img
             className='email--icon'
-            src='.\src\images\email--icon.png'
+            src='./images/email--icon.png'
             alt='Email Icon'
           />
           alessio.j.1993@gmail.com
@@ -18,7 +18,7 @@ function Contact() {
         <li>
           <img
             className='github--icon'
-            src='.\src\images\github-logo.png'
+            src='./images/github-logo.png'
             alt='Github Icon'
           />
           <a
@@ -32,7 +32,7 @@ function Contact() {
         <li className='linkedin--contact'>
           <img
             className='linkedin--icon'
-            src='.\src\images\linkedin--icon.png'
+            src='./images/linkedin--icon.png'
             alt='Linkedin Icon'
           />
           <a

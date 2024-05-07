@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className='navbar--logo'>
         <img
           className='logo--image'
-          src='./src/images/greengourmet-logo.svg'
+          src='./images/greengourmet-logo.svg'
           alt='greengourmet logo'
         />
         <h1 className='logo--title'>
