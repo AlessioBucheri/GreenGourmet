@@ -12,7 +12,7 @@ import Contact from "./components/Contact";
 import PageLayout from "./components/PageLayout";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 
-const API_KEY = "d0ffe0a048194bd6b8f5e5f2242c4e6c";
+const API_KEY = import.meta.env.REACT_APP_API_KEY;
 
 function App() {
   const [ingredient, setIngredient] = useState("");
