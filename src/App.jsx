@@ -12,8 +12,7 @@ import Contact from "./components/Contact";
 import PageLayout from "./components/PageLayout";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 
-const API_KEY = import.meta.env.REACT_APP_API_KEY;
-const URL = import.meta.env.REACT_APP_URL;
+const API_KEY = "d0ffe0a048194bd6b8f5e5f2242c4e6c";
 
 function App() {
   const [ingredient, setIngredient] = useState("");
@@ -23,16 +22,19 @@ function App() {
 
   const fetchRecipes = async (offset = 0) => {
     try {
-      const response = await axios.get(`${URL}/recipes/complexSearch`, {
-        params: {
-          query: ingredient,
-          addRecipeInformation: true,
-          diet: "vegetarian",
-          number: 9,
-          offset: offset,
-          apiKey: API_KEY,
-        },
-      });
+      const response = await axios.get(
+        `https://api.spoonacular.com/recipes/complexSearch`,
+        {
+          params: {
+            query: ingredient,
+            addRecipeInformation: true,
+            diet: "vegetarian",
+            number: 9,
+            offset: offset,
+            apiKey: API_KEY,
+          },
+        }
+      );
       return response.data.results.filter(
         (recipe) => recipe.id && recipe.title && recipe.image
       );
