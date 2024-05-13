@@ -5,17 +5,19 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className='navbar'>
-      <div className='navbar--logo'>
-        <img
-          className='logo--image'
-          src='./images/greengourmet-logo.svg'
-          alt='greengourmet logo'
-        />
-        <h1 className='logo--title'>
-          <span className='logo--title--green'>Green</span>
-          <span className='logo--title--gourmet'>Gourmet</span>
-        </h1>
-      </div>
+      <Link to='/'>
+        <div className='navbar--logo'>
+          <img
+            className='logo--image'
+            src='./images/greengourmet-logo.svg'
+            alt='greengourmet logo'
+          />
+          <h1 className='logo--title'>
+            <span className='logo--title--green'>Green</span>
+            <span className='logo--title--gourmet'>Gourmet</span>
+          </h1>
+        </div>
+      </Link>
       <ul className='navbar--menu'>
         <li className='navbar--menu--item'>
           <Link to='/'>Home</Link>

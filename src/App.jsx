@@ -12,7 +12,10 @@ import Contact from "./components/Contact";
 import PageLayout from "./components/PageLayout";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 
-const API_KEY = "d0ffe0a048194bd6b8f5e5f2242c4e6c";
+const API_KEY = import.meta.env.VITE_API_KEY;
+const URL = import.meta.env.VITE_URL;
+console.log(import.meta.env.VITE_API_KEY); // "123"
+console.log(import.meta.env.VITE_URL); // undefined
 
 function App() {
   const [ingredient, setIngredient] = useState("");

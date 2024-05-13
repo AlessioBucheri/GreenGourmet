@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SearchBar.css";
 
 function SearchBar({ ingredient, setIngredient, handleSearch }) {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const searchAnHandleLoading = async () => {
+    setIsLoading(true);
+    await handleSearch();
+    setIsLoading(false);
+  };
   return (
     <div className='search--bar'>
       <input
@@ -11,8 +18,8 @@ function SearchBar({ ingredient, setIngredient, handleSearch }) {
         value={ingredient}
         onChange={(e) => setIngredient(e.target.value)}
       />
-      <button className='search--button' onClick={handleSearch}>
-        Search
+      <button className='search--button' onClick={searchAnHandleLoading}>
+        {isLoading ? "Loading..." : "Search"}
       </button>
     </div>
   );
