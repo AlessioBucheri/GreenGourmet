@@ -1,5 +1,6 @@
 * {
-    box-sizing: 0;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
