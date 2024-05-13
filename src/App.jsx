@@ -14,8 +14,6 @@ import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 const URL = import.meta.env.VITE_URL;
-console.log(import.meta.env.VITE_API_KEY); // "123"
-console.log(import.meta.env.VITE_URL); // undefined
 
 function App() {
   const [ingredient, setIngredient] = useState("");
