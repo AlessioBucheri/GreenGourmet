@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
 }
 
 /* Modifica del CSS per schermi ancora più piccoli */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
     body {
         width: 100%;
     }
@@ -92,7 +92,61 @@ body::-webkit-scrollbar {
     }
 
     .contact--container {
+        width: 95%;
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    body {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: auto;
+    }
+
+    .navbar--logo {
+        align-items: center;
+    }
+
+    .logo--image {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar--menu {
+        flex-direction: row;
+    }
+
+    .main--content {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+
+    .main--title {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .main--image {
         width: 80%;
+    }
+
+    .recipe--list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about--wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact--container {
+        width: 95%;
         top: 10%;
     }
 }
