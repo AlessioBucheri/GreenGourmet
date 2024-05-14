@@ -3,11 +3,12 @@ import "./Contact.css";
 function Contact() {
   return (
     <div className='contact--container'>
-      <h1 className='contact--title'>Keep in Touch!</h1>
-      <p>You can find me here:</p>
+      <div className='contact--container--inner'>
+        <h1 className='contact--title'>Keep in Touch!</h1>
+        <p>You can find me here:</p>
+      </div>
       <ol className='contact--list'>
         <li>
-          {" "}
           <img
             className='email--icon'
             src='./images/email--icon.png'
