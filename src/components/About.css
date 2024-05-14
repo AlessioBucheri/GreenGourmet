@@ -1,6 +1,6 @@
 .about--wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(220, 204, 204, 0.142);
