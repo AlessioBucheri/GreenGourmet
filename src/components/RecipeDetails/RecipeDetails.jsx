@@ -8,6 +8,7 @@ const URL = import.meta.env.VITE_URL;
 
 const RecipeDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
@@ -24,6 +25,9 @@ const RecipeDetails = () => {
 
     fetchRecipeDetails();
   }, [id]);
+  const handleBackToList = () => {
+    navigate("/recipes");
+  };
 
   if (!recipe) {
     return <div>Loading...</div>;
@@ -31,6 +35,9 @@ const RecipeDetails = () => {
 
   return (
     <div className='recipeDetails--container'>
+      <button className='backToList--button' onClick={handleBackToList}>
+        Back to Recipes
+      </button>
       <div className='recipeDetails--wrapper'>
         <div className='recipeDetails--left'>
           <h1 className='recipeDetails--title'>{recipe.title}</h1>

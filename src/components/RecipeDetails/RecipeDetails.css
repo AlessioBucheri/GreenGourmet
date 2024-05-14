@@ -4,6 +4,21 @@
     align-items: center;
 }
 
+.backToList--button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(43, 5, 4, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
 .recipeDetails--wrapper {
     display: flex;
     flex-direction: column;
