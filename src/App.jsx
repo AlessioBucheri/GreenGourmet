@@ -11,6 +11,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import PageLayout from "./components/PageLayout";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
+import RecipeDetails from "./components/RecipeDetails/RecipeDetails"; // Importa il nuovo componente
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 const URL = import.meta.env.VITE_URL;
@@ -86,6 +87,8 @@ function App() {
         />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/recipe/:id' element={<RecipeDetails />} />{" "}
+        {/* Nuova rotta */}
       </Routes>
       <Footer />
     </Router>

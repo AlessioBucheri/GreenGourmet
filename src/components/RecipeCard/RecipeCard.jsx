@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./RecipeCard.css";
 
 const RecipeCard = ({ recipe }) => {
@@ -13,14 +14,9 @@ const RecipeCard = ({ recipe }) => {
   };
   return (
     <div className='recipe--card' style={divStyle}>
-      <a
-        className='recipe--link'
-        href={recipe.sourceUrl}
-        target='_blank'
-        rel='noreferrer noopen'
-      >
+      <Link className='recipe--link' to={`/recipe/${recipe.id}`}>
         <h4 className='recipe--title'>{recipe.title}</h4>
-      </a>
+      </Link>
     </div>
   );
 };
