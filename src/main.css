@@ -20,6 +20,21 @@ body::-webkit-scrollbar {
     /* Nasconde la barra in Chrome, Safari e Opera */
 }
 
+@media (min-width: 992px) and (max-width : 1200px) {
+    .recipeDetails--title {
+        font-size: 3em;
+    }
+
+    .recipeDetails--right h2 {
+        font-size: 2em;
+    }
+
+    .recipeDetails--right li,
+    .recipeDetails--right p {
+        font-size: 1.3em;
+    }
+}
+
 @media screen and (max-width: 710px) {
     .main--content {
         flex-direction: row;
@@ -148,5 +163,10 @@ body::-webkit-scrollbar {
     .contact--container {
         width: 95%;
         top: 10%;
+    }
+
+    .recipeDetails--container {
+        margin-top: 60px;
+        padding: 20px;
     }
 }
