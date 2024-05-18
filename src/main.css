@@ -59,15 +59,13 @@ body::-webkit-scrollbar {
 
 /* Modifica del CSS per schermi ancora più piccoli */
 @media screen and (max-width: 430px) {
-    body {
-        width: 100%;
-    }
-
     .navbar {
         flex-direction: column;
         align-items: center;
         position: fixed;
-        height: auto;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
     }
 
     .navbar--logo {
@@ -75,23 +73,34 @@ body::-webkit-scrollbar {
     }
 
     .logo--image {
-        margin: 0;
+        max-width: 40px;
         padding: 0;
+        margin-bottom: 10px;
+        margin-right: 5px;
     }
 
-    .navbar--menu {
-        flex-direction: row;
+    .logo--title {
+        font-size: 18px;
+    }
+
+    .navbar--menu--item {
+        font-size: 12px;
     }
 
     .main--content {
+        margin-top: 80px;
+        display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
-        margin-top: 80px;
+        align-items: center;
     }
 
     .main--title {
-        width: 100%;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    .main--description {
+        font-size: 20px;
     }
 
     .main--image {
@@ -110,6 +119,11 @@ body::-webkit-scrollbar {
         width: 95%;
         top: 10%;
     }
+
+    .footer {
+        font-size: 12px;
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -121,7 +135,9 @@ body::-webkit-scrollbar {
         flex-direction: column;
         align-items: center;
         position: fixed;
-        height: auto;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
     }
 
     .navbar--logo {
@@ -129,23 +145,34 @@ body::-webkit-scrollbar {
     }
 
     .logo--image {
-        margin: 0;
+        max-width: 40px;
         padding: 0;
+        margin-bottom: 10px;
+        margin-right: 5px;
     }
 
-    .navbar--menu {
-        flex-direction: row;
+    .logo--title {
+        font-size: 18px;
+    }
+
+    .navbar--menu--item {
+        font-size: 12px;
     }
 
     .main--content {
+        margin-top: 80px;
+        display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
-        margin-top: 80px;
+        align-items: center;
     }
 
     .main--title {
-        width: 100%;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    .main--description {
+        font-size: 20px;
     }
 
     .main--image {
@@ -168,5 +195,10 @@ body::-webkit-scrollbar {
     .recipeDetails--container {
         margin-top: 60px;
         padding: 20px;
+    }
+
+    .footer {
+        font-size: 10px;
+        height: 40px;
     }
 }

@@ -5,7 +5,7 @@
     align-items: center;
     padding: 10px;
     background-color: #CCDBDC;
-    height: 30px;
+    height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,12 +19,12 @@
 }
 
 .logo--image {
-    max-width: 45px;
+    max-width: 80px;
     padding: 6px 0 6px 15px;
 }
 
 .logo--title {
-    font-size: 18px;
+    font-size: 40px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
     padding: 0;
 }
@@ -48,8 +48,8 @@
 .navbar--menu--item {
     color: #0B5D1E;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 30px;
+    padding: 0 30px;
 }
 
 .navbar--menu--item:hover {

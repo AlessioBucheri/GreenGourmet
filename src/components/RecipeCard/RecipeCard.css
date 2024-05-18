@@ -12,17 +12,16 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 .recipe--title {
-    font-size: 16px;
+    font-size: 30px;
     color: #2B0504;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: auto;
     background-color: #ffffff9a;
 }
 

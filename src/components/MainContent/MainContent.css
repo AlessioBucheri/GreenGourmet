@@ -1,11 +1,9 @@
 .main--content {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(220, 204, 204, 0.142);
-    margin-top: 50px;
+    margin-top: 80px;
+    width: 100%;
 }
 
 .main--text {
@@ -13,12 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     color: #2B0504;
 }
 
 .main--title {
-    font-size: 45px;
+    font-size: 80px;
     padding: 12px;
     text-align: center;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
@@ -29,14 +26,14 @@
 
 .main--description {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding: 10px;
 }
 
 .main--image {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 800px;
+    max-height: 600px;
     border-radius: 30px;
     padding: 20px;
     margin: 0 auto;

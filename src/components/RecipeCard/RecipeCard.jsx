@@ -8,8 +8,8 @@ const RecipeCard = ({ recipe }) => {
   }
   const divStyle = {
     backgroundImage: `url(${recipe.image})`,
-    backgroundSize: "200px",
     backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
     backgroundPosition: "center",
   };
   return (
