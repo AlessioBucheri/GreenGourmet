@@ -5,7 +5,7 @@ function Contact() {
     <div className='contact--container'>
       <div className='contact--container--inner'>
         <h1 className='contact--title'>Keep in Touch!</h1>
-        <p>You can find me here:</p>
+        <p className='contact--description'>You can find me here:</p>
       </div>
       <ol className='contact--list'>
         <li>

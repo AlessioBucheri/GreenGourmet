@@ -6,29 +6,28 @@
     background-color: rgba(220, 204, 204, 0.142);
     margin-top: 150px;
     color: #2B0504;
-    padding: 10px;
+    width: 100%;
 }
 
 .about--title {
-    font-size: 45px;
+    font-size: 80px;
     text-align: center;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
     line-height: 0.9;
     letter-spacing: 2.5px;
-    margin-bottom: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 3px;
-    padding: 5px;
     background-color: #ffffff5b;
-    padding: 0;
+    padding: 10px;
 }
 
 .about--title--section {
-    font-size: 45px;
+    font-size: 80px;
     text-align: center;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
     line-height: 0.9;
     letter-spacing: 2.5px;
-    margin-bottom: 0;
 }
 
 .about--description {
@@ -37,5 +36,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 50px;
+
 }

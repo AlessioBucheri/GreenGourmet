@@ -8,21 +8,41 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(220, 204, 204, 0.142);
-    margin-top: 150px;
+    margin-top: 250px;
     color: #2B0504;
     padding: 10px;
     width: 100%;
+}
+
+.contact--title {
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.244);
+    line-height: 0.9;
+    letter-spacing: 2.5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    background-color: #ffffff5b;
+    padding: 10px;
+}
+
+.contact--description {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .contact--list {
     list-style: none;
     padding: 0;
     margin-top: 10px;
+    font-size: 30px;
 }
 
 .contact--list img {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     margin-right: 10px;
 }
 
