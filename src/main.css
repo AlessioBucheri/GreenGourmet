@@ -100,15 +100,33 @@ body::-webkit-scrollbar {
     }
 
     .main--description {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .main--image {
-        width: 80%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .search--input {
+        width: 200px;
+    }
+
+    .search--input::placeholder {
+        font-size: 15px;
     }
 
     .recipe--list {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recipe--card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .recipeDetails--wrapper {
+        margin-bottom: 50px;
     }
 
     .about--wrapper {
@@ -121,8 +139,11 @@ body::-webkit-scrollbar {
     }
 
     .footer {
-        font-size: 12px;
-        height: 40px;
+        height: 30px;
+    }
+
+    .footer--text {
+        font-size: 15px;
     }
 }
 
