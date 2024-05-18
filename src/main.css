@@ -20,7 +20,16 @@ body::-webkit-scrollbar {
     /* Nasconde la barra in Chrome, Safari e Opera */
 }
 
-@media (min-width: 992px) and (max-width : 1200px) {
+@media screen and (max-width : 1400px) {
+    .main--image {
+        width: 50%;
+        height: auto;
+    }
+
+    .main--text {
+        font-size: 30px;
+    }
+
     .recipeDetails--title {
         font-size: 3em;
     }
@@ -35,9 +44,104 @@ body::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 710px) {
-    .main--content {
+@media screen and (max-width : 830px) {
+    .navbar {
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+    }
+
+    .navbar--logo {
+        align-items: center;
+    }
+
+    .logo--image {
+        max-width: 60px;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+
+    .logo--title {
+        font-size: 30px;
+    }
+
+    .navbar--menu--item {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width : 711px) and (max-width : 1200px) {
+
+    .main--image {
+        width: 50%;
+        height: auto;
+    }
+
+    .main--title {
+        font-size: 40px;
+    }
+
+    .main--text {
+        font-size: 20px;
+    }
+
+    .recipeDetails--title {
+        font-size: 3em;
+    }
+
+    .recipeDetails--right h2 {
+        font-size: 2em;
+    }
+
+    .recipeDetails--right li,
+    .recipeDetails--right p {
+        font-size: 1.3em;
+    }
+
+    .search--input {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar--logo {
+        align-items: center;
+    }
+
+    .logo--image {
+        max-width: 40px;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+
+    .logo--title {
+        font-size: 18px;
+    }
+
+    .navbar--menu--item {
+        font-size: 12px;
+    }
+
+    .main--content {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .main--text {
@@ -50,10 +154,15 @@ body::-webkit-scrollbar {
 
     .main--image {
         width: 50%;
+        height: auto;
     }
 
     .recipe--list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search--input {
+        width: 300px;
     }
 }
 

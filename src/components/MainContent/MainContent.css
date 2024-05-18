@@ -32,8 +32,9 @@
 }
 
 .main--image {
-    width: 800px;
-    height: 600px;
+    max-width: 800px;
+    height: auto;
+    display: block;
     border-radius: 30px;
     padding: 20px;
     margin: 0 auto;
